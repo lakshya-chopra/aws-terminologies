@@ -11,7 +11,9 @@
  1. S3 : Scalable, Object Storage 
  2. EBS : For having block storage associated with EC2 instances. offers low latency and cost effectiveness.
  3. EFS: Offers file storage for EC2.
+ 4. S3 Glacier : Low cost cloud data archival service (like a data vault) that offfers fast retrieval, highly secure and durable.
 
 # Load Balancers and Target groups: 
- **Load balancers are given the task of efficienctly dividing the network traffic or resources across multiple servers that are part of that network. This ensures that all the servers remain active (unless there’s some hardware issue)
+ **Load balancers are given the task of efficienctly dividing the network traffic or resources across multiple servers that are part of that network. This ensures that all the servers remain active (unless there’s some hardware issue).**
+ 
  
