@@ -1,3 +1,18 @@
+# benefits
+faster time to market
+scalability and flexibility
+cost savings
+better collaboration
+advanced security
+data loss prevention
+
+# disadvantage
+risk of vendor lock-in
+less control over underlying cloud insfra
+concerns about security risks like data privacy and online threats
+integration complexity with exisiting systems
+unforseen costs and unexpected expenses
+
 # aws-terminologies
 
 1. **AWS RDS** : This is a relational database service offered by aws which operates on databases that use SQL ( for eg: MySQL, PostgreSQL, MariaDB, Aurora). This services focuses on automatically backing up, dupicating, and auto scaling of the data.
@@ -18,5 +33,9 @@
 
  **Security groups** : A security group controls the traffic that is allowed to reach and leave the resources that it is associated with. For example, after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic for the instance. When you create a VPC, it comes with a default security group. (acts as a firewall)
 
-Screenshot from 2023-11-26 15-39-41 Screenshot from 2023-11-26 15-39-41 Screenshot from 2023-11-26 15-40-34
- 
+# Network Services
+VPC : own isolated environment in a public cloud
+Domain Name Service - Route 53
+
+public subnet : can receive traffic from outerworld
+private subnet : cannot receive traffic from outerworld but may or may not send traffic to outerworld
