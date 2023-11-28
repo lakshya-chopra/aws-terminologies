@@ -13,7 +13,10 @@
  3. EFS: Offers file storage for EC2.
  4. S3 Glacier : Low cost cloud data archival service (like a data vault) that offfers fast retrieval, highly secure and durable.
 
-# Load Balancers and Target groups: 
+# Load Balancers: 
  **Load balancers are given the task of efficienctly dividing the network traffic or resources across multiple servers that are part of that network. This ensures that all the servers remain active (unless there’s some hardware issue).**
- 
+
+ **Security groups** : A security group controls the traffic that is allowed to reach and leave the resources that it is associated with. For example, after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic for the instance. When you create a VPC, it comes with a default security group. (acts as a firewall)
+
+Screenshot from 2023-11-26 15-39-41 Screenshot from 2023-11-26 15-39-41 Screenshot from 2023-11-26 15-40-34
  
