@@ -1,17 +1,21 @@
-# benefits
-faster time to market
-scalability and flexibility
-cost savings
-better collaboration
-advanced security
-data loss prevention
+# Cloud Computing
 
-# disadvantage
-risk of vendor lock-in
-less control over underlying cloud insfra
-concerns about security risks like data privacy and online threats
-integration complexity with exisiting systems
-unforseen costs and unexpected expenses
+### Benefits
+ * faster time to market
+ * scalability and flexibility
+ * cost savings
+ * better collaboration
+ * advanced security
+ * data loss prevention
+ * failover and caching mechanisms
+ * wide range of services
+
+### Disadvantages
+* risk of vendor lock-in
+* less control over underlying cloud infra
+* concerns about security risks like data privacy and online threats
+* integration complexity with exisiting systems
+* unforseen costs
 
 # aws-terminologies
 
@@ -30,19 +34,17 @@ unforseen costs and unexpected expenses
 
 # Load Balancers: 
  **Load balancers are given the task of efficienctly dividing the network traffic or resources across multiple servers that are part of that network. This ensures that all the servers remain active (unless there’s some hardware issue).**
+ ![How load balancers work](https://cdn.ttgtmedia.com/rms/onlineimages/networking-load_balancing_mobile.png)
 
  **Security groups** : A security group controls the traffic that is allowed to reach and leave the resources that it is associated with. For example, after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic for the instance. When you create a VPC, it comes with a default security group. (acts as a firewall)
 
 # Network Services
-VPC : own isolated environment in a public cloud
-Domain Name Service - Route 53
+**VPC** : own isolated private environment in a public cloud, which contains all the services offered by the vendor.
+**Domain Name Service** - Route 53
 
-public subnet : can receive traffic from outerworld
-private subnet : cannot receive traffic from outerworld but may or may not send traffic to outerworld
-![Screenshot from 2023-11-26 17-59-50](https://github.com/KRIISHSHARMA/AWS/assets/86760658/a6881e65-16b5-4e2f-8480-973fee9344f6)
+**public-subnet** : Subnets which have direct access to the internet, they can receive inbound connections from the internet.
+**private-subnet** : Subnets which don't have direct internet access, i.e. they cannot receive inbound conns from the internet. However, they may initiate internet conns through NAT Gateways.
 
-- public subnet : can receive traffic from outerworld 
-- private subnet : cannot receive traffic from outerworld but may or may not send traffic to outerworld
 
 ![Screenshot from 2023-11-26 18-03-33](https://github.com/KRIISHSHARMA/AWS/assets/86760658/dee853ad-6c86-4238-98ec-ba7ba60b7831)
 ![Screenshot from 2023-11-26 18-05-39](https://github.com/KRIISHSHARMA/AWS/assets/86760658/0e807497-f6ce-484e-82c0-40f1bcd83c45)
@@ -54,11 +56,10 @@ private subnet : cannot receive traffic from outerworld but may or may not send 
 ![Screenshot from 2023-11-26 13-57-52](https://github.com/KRIISHSHARMA/AWS/assets/86760658/86722cee-9cc8-47be-9e62-a4f6fb8dc842)
 ![Screenshot from 2023-11-26 13-59-20](https://github.com/KRIISHSHARMA/AWS/assets/86760658/2edee858-bceb-49da-8c19-d87403bf0582)
 
-## Application based LB 
+## Application based LB:
+
 - key pair : kind of like a password (public key is username; private key is password)
   - PPK (PuTTY Private Key) and PEM (Privacy Enhanced Mail) are two file formats that are commonly used for SSH and SSL/TLS connections. While PPK files are primarily used with PuTTY on Windows, PEM files are more widely supported and can be used with various tools and platforms
-
-- security groups : A security group controls the traffic that is allowed to reach and leave the resources that it is associated with. For example, after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic for the instance. When you create a VPC, it comes with a default security group. (acts as a firewall)
 
 ![Screenshot from 2023-11-26 15-39-41](https://github.com/KRIISHSHARMA/AWS/assets/86760658/90eeb7f4-8428-4876-8a3e-288feb952aa1)
 ![Screenshot from 2023-11-26 15-39-41](https://github.com/KRIISHSHARMA/AWS/assets/86760658/73bc04f3-081a-4451-adf4-f89c488b8a67)
